@@ -1,0 +1,28 @@
+header {
+  display: grid;
+  border: 2px;
+  border-color: white;
+  place-items: center;
+  &>div {
+
+  }
+}
+
+
+.profile-images {
+  position: relative; /* torna o container um contexto para posicionamento */
+  width: max-content; /* ajusta ao tamanho da imagem base */
+}
+
+.user-img {
+  display: block; /* remove espaçamentos indesejados */
+  width: 112px; /* ou um tamanho fixo se preferir */
+}
+
+.vector-img {
+  position: absolute; /* posiciona em cima da user-img */
+  top: 78px;  /* ajusta conforme necessário */
+  left: 78px; /* ajusta conforme necessário */
+  width: 32px; /* ou qualquer tamanho desejado */
+  pointer-events: none; /* se não quiser que a imagem bloqueie cliques */
+}
