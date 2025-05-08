@@ -24,19 +24,23 @@
   --font-primary: 'Asap', sans-serif;
   --font-secondary: 'Inconsolata', sans-serif;
   --font-tertiary: 'Maven', sans-serif;
-  --text-asap-lg: ;
-  --text-asap-md: ;
-  --text-asap-sm: ;
+  --title-lg: 700 56px/120% var(--font-primary);
+  --title-md: 600 24px/120% var(--font-primary);
+  --title-sm: 500 16px/120% var(--font-primary);
 
-  --text-incon-sub: ;
+  --text-incon-sub: 400 20px/120% var(--font-secondary);
 
-  --text-maven-md: ;
-  --text-maven-sm: ;
-
+  --text-maven-md: 400 16px/140% var(--font-tertiary);
+  --text-maven-sm: 400 14px/140% var(--font-tertiary);
 }
+
 
 body {
-  font-family: var(--font-primary);
   color: var(--gray-600);
   background-color: var(--gray-100);
+  width: 100%;  
+  max-width: 1200px; 
+  margin: 0 auto;
+  padding: 0 20px;
 }
+

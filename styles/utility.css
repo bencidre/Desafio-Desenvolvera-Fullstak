@@ -1,0 +1,13 @@
+h1 {
+  font: var(--title-lg);
+}
+
+p {
+  font: var(--text-maven-sm);
+  color: var(--gray-400);
+}
+
+#hello {
+  font: var(--text-incon-sub);
+  color: var(--gray-600);
+}
