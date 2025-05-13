@@ -37,10 +37,29 @@
 
 body {
   color: var(--gray-600);
-  background-color: var(--gray-100);
+  position: relative;
   width: 100%;  
-  max-width: 1200px; 
+  max-width: 100%; 
   margin: 0 auto;
   padding: 0 20px;
+  background-color: var(--gray-200);
 }
 
+
+main {
+  display: grid;
+  justify-content: center;
+  background-color: var(--gray-200);
+  border: 2px solid red;
+  padding-bottom: 70px;
+  & > header {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+  }
+  & span {
+    padding-bottom: 8px;
+    color: var(--red);
+    font: var(--text-incon-sub);
+  }
+}
