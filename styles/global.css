@@ -9,7 +9,7 @@
   --red: #E3646E;
   --purple: #BB72E9;
   --blue: #3996DB;
-  --gree: #82BC4F;
+  --green: #82BC4F;
   --yellow: #EABD5F;
 
   /*Base cores */
@@ -41,7 +41,7 @@ body {
   width: 100%;  
   max-width: 100%; 
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 1.25rem;
   background-color: var(--gray-200);
 }
 
@@ -51,15 +51,46 @@ main {
   justify-content: center;
   background-color: var(--gray-200);
   border: 2px solid red;
-  padding-bottom: 70px;
+  padding-bottom: 4.375rem;
   & > header {
     display: grid;
     justify-content: center;
     text-align: center;
   }
   & span {
-    padding-bottom: 8px;
+    padding-bottom: .50rem;
     color: var(--red);
     font: var(--text-incon-sub);
   }
 }
+
+
+
+@media (max-width: 768px) {
+  #text-perfil {
+    max-width: 90%;
+  }
+
+  .profile-images {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  #habilitys {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .works {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  #services {
+    grid-template-columns: 1fr;
+  }
+} 

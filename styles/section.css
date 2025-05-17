@@ -1,45 +1,47 @@
-header {
+#perfil {
   display: grid;
   place-items: center;
   background: url(/assets/images/Background_Intro.png) no-repeat;
   background-size: 100% 100%;
-}
 
-div {
-
+  & #text-perfil span {
+    color: var(--red);
+    font: var(--text-incon-sub);
+  }
 }
 
 #text-perfil {
   text-align: center;
-  max-width: 680px;
+  max-width: 42.5rem; 
   margin: 0 auto;
 }
 
 #habilitys {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
-
   justify-content: center;
   margin-bottom: 11.87rem;
-
+  gap: 1rem
 }
 
 #habilitys-1 {
   display: flex;
-  gap: .625rem;
+  gap: 0.625rem;
   margin-top: 5rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 #habilitys span {
   display: flex;
-
-  background-color:var(--gray-300);
+  background-color: var(--gray-300);
   border-radius: 1.25rem;
   align-items: center;
-  padding: .5rem .5rem .5rem 1rem;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
   width: 7.125rem;
   height: 2.5rem;
-  gap: .5rem;
+  gap: 0.5rem;
 
   img {
     width: 1.5rem;
@@ -48,84 +50,81 @@ div {
 
 .profile-images {
   display: grid;
-  position: relative; /* torna o container um contexto para posicionamento */
-  width: max-content; /* ajusta ao tamanho da imagem base */
+  position: relative;
+  width: max-content;
   justify-self: center;
-  margin-bottom: 56px;
-  margin-top: 120px;
+  margin-bottom: 3.5rem; 
+  margin-top: 7.5rem; 
 }
 
 .user-img {
-  display: block; /* remove espaçamentos indesejados */
-  width: 112px; /* ou um tamanho fixo se preferir */
+  display: block;
+  width: 7rem; 
 }
 
 .vector-img {
-  position: absolute; /* posiciona em cima da user-img */
-  top: 78px;  /* ajusta conforme necessário */
-  left: 78px; /* ajusta conforme necessário */
-  width: 32px; /* ou qualquer tamanho desejado */
-  pointer-events: none; /* se não quiser que a imagem bloqueie cliques */
+  position: absolute;
+  top: 4.875rem; 
+  left: 4.875rem; 
+  width: 2rem; 
+  pointer-events: none;
 }
 
 #flow {
   display: flex;
-  justify-content: center; /* alinha horizontalmente */
-  align-items: center; 
-  margin-bottom: 70px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4.375rem; 
+
   & img {
     width: 1.75rem;
   }
-  
 }
 
 main > header {
   border: 1px solid red;
 }
 
-
 section {
   border: 1px solid red;
   justify-content: center;
 }
 
-
 #trabalhos {
   border: 1px solid red;
-  padding: 48px 0;
+  padding: 3rem 0; 
   display: flex;
-  justify-content: center; /* Centraliza horizontalmente */
-
+  justify-content: center;
 }
 
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  gap: 1.5rem;
 }
 
 .item {
   background-color: var(--gray-300);
-  padding: 8px;
-  border-radius: 12px;
+  padding: 0.5rem; 
+  border-radius: 0.75rem; 
   color: white;
   text-align: left;
-  width: 330px;
+  width: 20.625rem; 
 }
 
 .item img {
   display: block;
-  width: 306px;
-  height: 156px;
+  width: 19.125rem; 
+  height: 9.75rem; 
   object-fit: cover;
-  border-radius: 12px;
-  margin-bottom: 12px;
+  border-radius: 0.75rem; 
+  margin-bottom: 0.75rem; 
 }
 
 .item h3 {
   font-size: 1rem;
   font-weight: bold;
-  margin: 6px 0 2px;
+  margin: 0.375rem 0 0.125rem; 
 }
 
 .item p {
@@ -133,4 +132,59 @@ section {
   color: #ccc;
   line-height: 1.3;
   margin: 0;
+}
+
+#services {
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: var(--gray-200);
+  padding: 0.75rem;
+
+  & header {
+    display: grid;
+    justify-items: center;
+
+    & h3 {
+      font: var(--title-md);
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  & #websites path {
+    stroke: var(--purple);
+  }
+  & #api path {
+    stroke: var(--yellow);
+  }
+  & #dev path {
+    stroke: var(--green);
+  }
+
+  & div {
+    display: grid;
+    align-items: center;
+    padding-bottom: 4.25rem;
+  }
+
+  & svg {
+    padding: 0.15rem;
+    width: 3rem;
+    height: 3rem;
+  }
+
+  & .works {
+    display: flex;
+    gap: 1.15rem;
+
+    & div {
+      border: 1px solid var(--gray-300);
+      border-radius: 0.5rem;
+      padding: 1.25rem; 
+    }
+
+    & span {
+      font: var(--title-sm);
+      color: var(--gray-600);
+    }
+  }
 }
