@@ -90,11 +90,16 @@ section {
   justify-content: center;
 }
 
+#works {
+  margin-top: 70px;
+}
+
 #trabalhos {
   border: 1px solid red;
   padding: 3rem 0; 
   display: flex;
   justify-content: center;
+  padding-bottom: 100px;
 }
 
 .grid {
@@ -105,11 +110,19 @@ section {
 
 .item {
   background-color: var(--gray-300);
-  padding: 0.5rem; 
+  padding: 0.75rem; 
   border-radius: 0.75rem; 
   color: white;
   text-align: left;
-  width: 20.625rem; 
+  width: 20.625rem;
+  & h3 {
+    font: var(--title-sm);
+    padding: 4px;
+  } 
+  & p {
+    font: var(--text-maven-sm);
+    padding-left: 4px;
+  }
 }
 
 .item img {
@@ -137,9 +150,10 @@ section {
 #services {
   justify-items: center;
   grid-template-columns: 1fr 1fr 1fr;
-  background-color: var(--gray-200);
+  background-color: var(--gray-100);
   padding: 0.75rem;
-
+  padding-top: 88px;
+  padding-bottom: 4.25rem;
   & header {
     display: grid;
     justify-items: center;
@@ -163,7 +177,7 @@ section {
   & div {
     display: grid;
     align-items: center;
-    padding-bottom: 4.25rem;
+
   }
 
   & svg {
@@ -188,3 +202,83 @@ section {
     }
   }
 }
+
+#redes {
+  display: grid;
+  background-image: url(/assets/images/Background_Contacts.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding-top: 120px;
+
+
+  & span {
+    color: var(--purple);
+  }
+  & h3 {
+    font: var(--title-md);
+  }
+  & .contato {
+    display: grid;
+    justify-items: center;
+    gap: .5rem;
+    border: 1px solid red;
+    margin-bottom: 48px;
+  }
+
+  & .redes-sociais {
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 200px;
+    & div {
+      border: 1px solid red;
+      border-radius: 8px;
+      background-color: var(--gray-300);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 20px; 
+      width: 400px;
+      height: 68px;
+      & img {
+        width: 24px;
+        height: auto;
+      }
+
+      & .seta {
+        margin-left: auto;
+        width: 11px;
+        height: 11px;
+        object-fit: contain;
+      }
+    }
+    & div:hover {
+      cursor: pointer;
+      color: #3996db;
+      width: 400px;
+      height: 68px;
+      & #linkedin > path {
+      stroke: #3996db;
+      } 
+      & #email > path {
+      stroke: var(--yellow);
+      } 
+      & #instagram > path {
+      stroke: var(--purple);
+      } 
+      & #github > path {
+      stroke: var(--green);
+      } 
+      & img {
+        
+      }
+      & .seta {
+        content: url(/assets/icons/ArrowUpRight.svg);
+        width: 20px;
+        height: 20px; 
+
+        }
+      }
+
+    }
+  }
+
