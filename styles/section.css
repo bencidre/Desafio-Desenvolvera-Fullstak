@@ -3,6 +3,7 @@
   place-items: center;
   background: url(../assets/images/Background_Intro.png) no-repeat;
   background-size: 100% 100%;
+  width: 100vw;
 
   & #text-perfil span {
     color: var(--red);
@@ -183,6 +184,7 @@ section {
   & .works {
     display: flex;
     gap: 1.15rem;
+    justify-content: center;
 
     & div {
       border: 1px solid var(--gray-300);
@@ -203,7 +205,7 @@ section {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   padding-top: 4.5rem;
-
+  padding-bottom: 6.5rem;
 
   & span {
     color: var(--purple);

@@ -40,17 +40,16 @@ body {
   
   width: 100%;  
   max-width: 100%; 
-  margin: 0 auto;
-  padding: 0 1.25rem;
-  background-color: var(--gray-200);
+  margin: 0;
+  padding: 0;
+  background-color: #1D1E23;
 }
 
 
 main {
   display: grid;
-
   justify-content: center;
-  background-color: var(--gray-200);
+  background-color: var(--gray100);
   padding-bottom: 4.375rem;
   & > header {
     display: grid;
