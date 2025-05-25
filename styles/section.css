@@ -1,7 +1,7 @@
 #perfil {
   display: grid;
   place-items: center;
-  background: url(./assets/images/Background_Intro.png) no-repeat;
+  background: url(/assets/images/Background_Intro.png) no-repeat;
   background-size: 100% 100%;
 
   & #text-perfil span {
@@ -19,9 +19,9 @@
 #habilitys {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  width: 100vw;
   justify-content: center;
-  margin-bottom: 11.87rem;
+  margin-bottom: 7.87rem;
   gap: 1rem
 }
 
@@ -86,14 +86,14 @@ section {
 }
 
 #works {
-  margin-top: 70px;
+  margin-top: 2.73rem;
 }
 
 #trabalhos {
   padding: 3rem 0; 
   display: flex;
   justify-content: center;
-  padding-bottom: 100px;
+  padding-bottom: 6.25;
 }
 
 .grid {
@@ -111,11 +111,11 @@ section {
   width: 20.625rem;
   & h3 {
     font: var(--title-sm);
-    padding: 4px;
+    padding: .25rem;
   } 
   & p {
     font: var(--text-maven-sm);
-    padding-left: 4px;
+    padding-left: .25rem;
   }
 }
 
@@ -142,11 +142,11 @@ section {
 }
 
 #services {
+  width: 100vw;
   justify-items: center;
   grid-template-columns: 1fr 1fr 1fr;
   background-color: var(--gray-100);
-  padding: 0.75rem;
-  padding-top: 88px;
+  padding-top: 4.5rem;
   padding-bottom: 4.25rem;
   & header {
     display: grid;
@@ -199,10 +199,10 @@ section {
 
 #redes {
   display: grid;
-  background-image: url(./assets/images/Background_Contacts.png);
+  background-image: url(/assets/images/Background_Contacts.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  padding-top: 120px;
+  padding-top: 4.5rem;
 
 
   & span {
@@ -215,40 +215,40 @@ section {
     display: grid;
     justify-items: center;
     gap: .5rem;
-    margin-bottom: 48px;
+    margin-bottom: 3rem;
   }
 
   & .redes-sociais {
     display: grid;
     gap: 1rem;
-    margin-bottom: 200px;
+    margin-bottom: 12.5;
     & div {
 
-      border-radius: 8px;
+      border-radius: .5rem;
       background-color: var(--gray-300);
       display: flex;
       align-items: center;
-      gap: 12px;
-      padding: 20px; 
-      width: 400px;
-      height: 68px;
+      gap: .75rem;
+      padding: 1.25rem; 
+      width: 25rem;
+      height: 4.25rem;
       & img {
-        width: 24px;
+        width: 1.5rem;
         height: auto;
       }
 
       & .seta {
         margin-left: auto;
-        width: 11px;
-        height: 11px;
+        width: .6875rem;
+        height: .6875rem;
         object-fit: contain;
       }
     }
     & div:hover {
       cursor: pointer;
       color: #3996db;
-      width: 400px;
-      height: 68px;
+      width: 2rem;
+      height: 4.25rem;
       & #linkedin > path {
       stroke: #3996db;
       } 
@@ -265,9 +265,9 @@ section {
         
       }
       & .seta {
-        content: url(./assets/icons/ArrowUpRight.svg);
-        width: 20px;
-        height: 20px; 
+        content: url(/assets/icons/ArrowUpRight.svg);
+        width: 1.25rem;
+        height: 1.25rem; 
 
         }
       }
