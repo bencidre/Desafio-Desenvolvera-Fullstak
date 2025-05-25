@@ -81,12 +81,7 @@
   }
 }
 
-main > header {
-  border: 1px solid red;
-}
-
 section {
-  border: 1px solid red;
   justify-content: center;
 }
 
@@ -95,7 +90,6 @@ section {
 }
 
 #trabalhos {
-  border: 1px solid red;
   padding: 3rem 0; 
   display: flex;
   justify-content: center;
@@ -221,7 +215,6 @@ section {
     display: grid;
     justify-items: center;
     gap: .5rem;
-    border: 1px solid red;
     margin-bottom: 48px;
   }
 
@@ -230,7 +223,7 @@ section {
     gap: 1rem;
     margin-bottom: 200px;
     & div {
-      border: 1px solid red;
+
       border-radius: 8px;
       background-color: var(--gray-300);
       display: flex;

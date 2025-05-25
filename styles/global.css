@@ -50,7 +50,6 @@ main {
   display: grid;
   justify-content: center;
   background-color: var(--gray-200);
-  border: 2px solid red;
   padding-bottom: 4.375rem;
   & > header {
     display: grid;
